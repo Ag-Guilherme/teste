@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenAI Question Answering Demo</title>
+	<script src="https://cdn.jsdelivr.net/npm/@openai/api@0.4.5/dist/index.js"></script>
+	<script src="app.js"></script>
+	<style>
+		body {
+			background-color: #333;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+		form {
+			margin-top: 20px;
+		}
+		label {
+			display: block;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		input[type="text"] {
+			padding: 5px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			max-width: 600px;
+		}
+		button {
+			background-color: #f44336;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #d32f2f;
+		}
+		#answer {
+			margin-top: 20px;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+	</style>
+</head>
+<body>
+	<h1>OpenAI Question Answering Demo</h1>
+	<form>
+		<label for="question">Enter your question:</label>
+		<input type="text" name="question" id="question" required>
+		<button type="submit">Get answer</button>
+	</form>
+	<div id="answer"></div>
+</body>
+</html>
