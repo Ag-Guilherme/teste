@@ -1,4 +1,4 @@
-const openai = new OpenAI("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");
+const openai = new OpenAI "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";
 
 function generateAnswer(event) {
 	event.preventDefault();
